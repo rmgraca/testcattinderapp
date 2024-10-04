@@ -1,79 +1,34 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# minderaCatTinderChallenge
+To run the following project you'll need to have the following installed:
 
-# Getting Started
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/lang/en/)
+- [React Native](https://reactnative.dev/docs/environment-setup)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Warning!
+Unfortunately i don't have a personal macBook to be able to test the app under iOS, and because of that, i apologise in advance.
 
-## Step 1: Start the Metro Server
+## Getting started
+To run the app run the following commands:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- yarn install
+- yarn start
+- press "a" to run android build
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Run the app, alternatives
+- adb install app-release.apk
 
-```bash
-# using npm
-npm start
+or
+- yarn start
+and
+- npx react-native run-android
 
-# OR using Yarn
-yarn start
-```
+# Notes
+I understand that this project is far from perfect, it was done in such a small timeframe that corners had to be cut, but if i had more time to work on it, this is what i would do:
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Redo the <Profile> component since i  don't like the behaviour of the swipe library that i've picked, and probably work in a different way to render the profile cards one by one and picking them one by one from the profiles pool array.
+- Tidy the code up, there is some functions that could be segregated into a utils file
+- Add code to lazy fetch more cats from the API whenever we get to a specific threshold
+- try to have a nice code coverage with unit testing, around 90%
+- Would add async storage for persistance of the favourite cats
+- would test with more devices because of screen sizes behaviour (used google Pixel8 pro for the development)cd 
