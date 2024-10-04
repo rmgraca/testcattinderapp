@@ -1,4 +1,4 @@
-# minderaCatTinderChallenge
+# CatTinder test project
 To run the following project you'll need to have the following installed:
 
 - [Node.js](https://nodejs.org/en/)
