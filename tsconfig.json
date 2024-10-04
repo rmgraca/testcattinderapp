@@ -1,3 +1,20 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "moduleSuffixes": [".ios", ".android", ".native", ""],
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "paths": {
+      "~assets/*":["src/assets/*"],
+      "~app/*":["src/app/*"],
+      "~constants/*":["src/app/constants/*"],
+      "~hooks/*":["src/hooks/*"],
+      "~providers/*":["src/providers/*"],
+      "~screens/*":["src/screens/*"],
+      "~components/*":["src/components/*"],
+      "~types/*":["src/types/*"],
+      "~services/*":["src/services/*"],
+      "~root/*":["./*"],
+    }
+  }
 }
